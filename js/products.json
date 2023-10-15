@@ -1,0 +1,178 @@
+[
+    {  
+        "id":"Samsung-A04",
+        "titulo": "Samsung A04",
+        "imagen":"./media/Samsung-A04.png",
+        "categoria":{
+            " marca": "Samsung",
+            "memoria": "128GB",
+            "ram": "4GB"
+        },
+        "precio": 99999
+    },
+    {
+        "id": "Samsung-A24",
+        "titulo": "Samsung A24",
+        "imagen": "./media/Samsung-A24.png",
+        "categoria":{
+            "marca": "Samsung",
+            "memoria": "128GB",
+            "ram": "4GB"
+        },
+        "precio": 170000
+    },
+    {
+        "id": "Samsung-S21",
+        "titulo": "Samsung S21",
+        "imagen": "./media/Samsung-S21.png",
+        "categoria":{
+            " marca": "Samsung",
+            "memoria": "128GB",
+            "ram": "8GB"
+        },
+        "precio": 450000
+    },
+    {
+        "id": "Samsung-A10",
+        "titulo": "Samsung A10",
+        "imagen": "./media/Samsung-A10.png",
+        "categoria":{
+            "marca": "Samsung",
+            "memoria": "32GB",
+            "ram": "2GB"
+        },
+        "precio": 50000
+    },
+    {   
+        "id": "Moto-E22",
+        "titulo": "Moto E22",
+        "imagen": "./media/Moto-E22.png",
+        "categoria":{
+            "marca": "Motorola",
+            "memoria": "64GB",
+            "ram": "4GB"
+        },
+        "precio": 80000
+    },
+    {
+        "id": "Moto-G13",
+        "titulo": "Moto G13",
+        "imagen": "./media/Moto-G13.png",
+        "categoria":{
+            "marca": "Motorola",
+            "memoria": "64GB",
+            "ram": "4GB"
+        },
+        "precio": 90000
+    },
+    {
+        "id": "Moto-G72",
+        "titulo": "Moto G72",
+        "imagen": "./media/Moto-G72.png",
+        "categoria":{
+            "marca": "Motorola",
+            "memoria": "128GB",
+            "ram": "6GB"
+        },
+        "precio": 170000
+    },
+    {
+        "id": "Moto-E7i",
+        "titulo": "Moto E7i",
+        "imagen": "./media/Moto-E7i.png",
+        "categoria":{
+            "marca": "Motorola",
+            "memoria": "32GB",
+            "ram": "2GB"
+        },
+        "precio": 65000
+    },
+    {
+        "id": "Moto-Edge40",
+        "titulo": "Moto-Edge40",
+        "imagen": "./media/Moto-Edge40.png",
+        "categoria":{
+            "marca": "Motorola",
+            "memoria": "256GB",
+            "ram": "12GB"
+        },
+        "precio": 500000
+    },
+    {  
+        "id": "Apple-iPhone12",
+        "titulo": "Apple iPhone12",
+        "imagen": "./media/Apple-iPhone12.png",
+        "categoria":{
+            "marca": "Apple",
+            "memoria": "64GB",
+            "ram": "4GB"
+        },
+        "precio": 800000
+    },
+    {
+        "id": "Apple-iPhone13",
+        "titulo": "Apple iPhone13",
+        "imagen": "./media/Apple-iPhone13.png",
+        "categoria":{
+            "marca": "Apple",
+            "memoria": "256GB",
+            "ram": "6GB"
+        },
+        "precio": 1200000
+    },
+    {
+        "id": "Apple-iPhoneXS",
+        "titulo": "Apple iPhoneXS",
+        "imagen": "./media/Apple-iPhoneXS.png",
+        "categoria":{
+            "marca": "Apple",
+            "memoria": "256GB",
+            "ram": "4GB"
+        },
+        "precio": 560000
+    },
+    {
+        "id": "Apple-iPhone15",
+        "titulo": "Apple iPhone15",
+        "imagen": "./media/Apple-iPhone15.png",
+        "categoria":{
+            "marca": "Apple",
+            "memoria": "256GB",
+            "ram": "8GB"
+        },
+        "precio": 1800000
+    },
+    {   
+        "id": "Xiaomi-Redmi10C",
+        "titulo": "Xiaomi Redmi10C",
+        "imagen": "./media/Xiaomi-Redmi10C.png",
+        "categoria":{
+            "marca": "Xiaomi",
+            "memoria": "128GB",
+            "ram": "4GB"
+        },
+            "precio": 110000
+    },
+    {
+        "id": "Xiaomi-Redmi-Note10",
+        "titulo": "Xiaomi Redmi-Note10",
+        "imagen":"./media/Xiaomi-Redmi-Note10.png",
+        "categoria":{
+            "marca": "Xiaomi",
+            "memoria": "256GB",
+            "ram": "8GB"
+        },
+        "precio": 180000
+    },
+    {
+        "id": "Xiaomi-Redmi9T",
+        "titulo": "Xiaomi Redmi9T",
+        "imagen": "./media/Xiaomi-Redmi9T.png",
+        "categoria":{
+            "marca": "Xiaomi",
+            "memoria": "64GB",
+            "ram": "4GB"
+        },
+        "precio": 160000
+    }
+]

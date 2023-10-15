@@ -1,0 +1,130 @@
+@import "./base.css" ;
+
+main{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    background-color: cornsilk;
+}
+.filtersContainer{
+    display: flex;
+    flex-direction: column;
+    width: 15vw;
+    background-color: snow;
+    height: 100%;
+    padding: 15px;
+    font-size: 19px;
+}
+.filterOptions .hidden{
+    display: none;
+}
+.filterOptions .option{
+    background-color:transparent;
+    color: grey;
+    cursor: pointer;
+    width: 100%;
+}
+.filterOptions.option.active{
+    background-color: cadetblue;
+    color: blueviolet;
+    position: relative;
+}
+
+
+.filterOptions.option.active::before{
+    color:darkseagreen;
+    background-color:transparent ;
+    position: absolute;
+}
+.filterOptions .option .active::after{
+    color:darkseagreen;
+    background-color:transparent ;
+    position: absolute;
+}
+
+
+#product-container{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    background-color: snow;
+    width: 80vw;
+    gap: 5px;
+
+.product{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: transparent;
+    color: teal;
+    padding: 10px;
+    border: 1px solid teal;
+    border-radius: 10px;
+}
+.imagen{
+    height: 250px;
+    width: 235px;
+}
+.add {
+    border: none;
+    outline: 0;
+    padding: 10px;
+    background-color: teal;
+    text-align: center;
+    cursor: pointer;
+    width: 50%;
+    border-radius: 6px;
+}
+.add a{
+    color: snow;
+    font-size: 16px;
+}
+.add a:hover{
+    opacity: 0.6;
+    color: lemonchiffon;
+}
+}
+
+.cart-container{
+    display: flex;
+}
+.cart-Product{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: snow;
+    color: grey;
+    padding: 7px;
+    width: 80vw;
+}
+.cart-Product-img{
+    width: 100px;
+}
+
+.cart-Product span{
+    font-size: 15px;
+}
+.cart-action{
+    display: flex;
+    justify-content: space-around;
+}
+.cart-action-vaciar{
+    border: 0;
+    background-color: snow  ;
+    padding: 5px;
+    border-radius: 1rem;
+    color: gray;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.cart-action-total{
+    display: flex;
+    background-color: snow ;
+    padding: 5px;
+    color: aliceblue;
+    gap: 5px;
+}
+
+.disabled{
+    display: none;
+}

@@ -303,11 +303,14 @@ footer{
 /*mediasQ*/
 
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 1200px){
 
     .main-index{
         display: flex;
-        
+
+    }
+    .filtersContainer{
+        display: flex;
     }
 }
 

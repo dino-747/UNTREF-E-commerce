@@ -9,7 +9,8 @@
     <script src="https://kit.fontawesome.com/2f0a546e56.js" crossorigin="anonymous"></script>
 </head>
 <header>
-    <ul>
+        <h1 class="titulo-principal">UntrefCel</h1>
+    <ul class="btn-carrito-inicio">
         <li>
             <a class="btnInicio" href="../index.html">Seguir comprando</a>
         </li>
@@ -20,33 +21,43 @@
 </header>
 <body>
     <main>
-        <h2>Carrito</h2>
         <section class="cart-container">
-            <span id="Carrito-vacio" class="Carrito-vacio">No hay productos en el carrito</span>
+            <span id="Carrito-vacio" class="Carrito-vacio">No hay productos en el carrito <i class="fa-regular fa-face-sad-tear"></i></span>
             <ul id="cart-products" class="cart-products disabled">
-
+        
             </ul>
-            <ul id="cart-action" class="cart-action disabled">
-                <li >
-                    <a href="#" id="cart-action-vaciar" class="cart-action-vaciar">Vaciar
-                    </a>
-                </li>
-                <ul >
-                    <li id="cart-action-total">
+            <div id="cart-action" class="cart-action disabled">
+                <span>
+                    <a href="#" id="cart-action-vaciar" class="cart-action-vaciar">Vaciar</a>
+                </span>
+                <ul>
+                    <li id="cart-action-total" class="cart-action-total">
                         <p>Total:</p>
                         <p id="Total"></p>
                     </li>
                     <li>
                         <a id="cart-action-buy" class="cart-action-buy" href="#">Comprar</a>
-                        
                     </li>
                 </ul>
-                <li>
-                    <p id="Producto-comprado" class="Producto-comprado disabled">Gracias por su compra</p>
-                </li>
-            </ul>
+            </div>
+                <div>    
+                    <span id="Producto-comprado" class="Producto-comprado disabled ">Gracias por su compra<i class="fa-regular fa-thumbs-up"></i></span>
+                </div>
         </section>
     </main>
-
+    <footer>
+        <ul class="link-conteiner">
+            <li class="links-foot">
+                <a href="https://github.com/dino-747" target="_blank"><i class="fa-brands fa-github"></i></a>
+            </li>
+            <li class="links-foot">
+                <a href="https://www.linkedin.com/in/dyno-mandato-171396282/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            </li>
+            <li class="links-foot">
+                <a href="https://www.instagram.com/dynomandato/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+            </li>   
+        </ul>
+        <h5 class="firma">©Dino-Mandato 2023</h5>
+    </footer>
 </body>
 </html>

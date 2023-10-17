@@ -3,11 +3,11 @@ const productOnCart = JSON.parse(localStorage.getItem("products-On-Cart"))
 const carritoVacio = document.querySelector("#Carrito-vacio");
 const productsContainer = document.querySelector("#cart-products");
 const cartActions = document.querySelector("#cart-action");
-const comprado = document.querySelector("#Producto-comprado");
+const comprado = document.querySelector(".Producto-comprado");
 let btnDelete = document.querySelectorAll(".cart-Product-Delete")
 const btnVaciar = document.querySelector("#cart-action-vaciar")
 const precioTotal = document.querySelector("#Total")
-const comprarProducto = document.querySelector("#cart-action-buy")
+const comprarProducto = document.querySelector(".cart-action-buy")
 
 function cargarProductosCarrito(){
 if (productOnCart && productOnCart.length > 0){
@@ -25,7 +25,7 @@ if (productOnCart && productOnCart.length > 0){
         li.classList.add("cart-Product");
         li.innerHTML = `
             <li>
-                <img class="cart-Product-img" src= "${product.imagen}" alt="${product.titulo}">
+                <img class="cart-Product-img" src= "../media/${product.imagen}" alt="${product.titulo}">
             </li>
             <li class="cart-Product-title">
                 <span>Titulo</span>
@@ -78,7 +78,7 @@ function deleteProduct(e){
     const index = productOnCart.findIndex(producto => producto.id === idBtn);
     productOnCart.splice(index, 1);
     cargarProductosCarrito();
-    //btnDeleteReload()
+    btnDeleteReload()
     
     localStorage.setItem("products-On-Cart", JSON.stringify(productOnCart));
 }
@@ -105,4 +105,5 @@ function comprarTodo(){
     productsContainer.classList.add("disabled");
     cartActions.classList.add("disabled");
     comprado.classList.remove("disabled");
+
 }

@@ -1,6 +1,6 @@
 let products= [];
 
-fetch("js/products.json")
+fetch("./js/products.json")
     .then(Response => Response.json())
     .then(function(data) {
         products = data;
@@ -13,6 +13,7 @@ const search = document.querySelector(".search")
 const filterOptions = document.querySelectorAll(".option")
 let btnAdd = document.querySelectorAll(".add")
 const counter = document.querySelector("#count")
+let detalle = document.querySelectorAll(".detalle")
 
 
 const uploadProducts = function(allProducts){
@@ -24,15 +25,17 @@ const uploadProducts = function(allProducts){
         li.classList.add("product"); //le doy una clase
         li.innerHTML = ` 
             <h3 class="titulo">${productos.titulo}</h3>
-            <img class="imagen" src="${productos.imagen}" alt="${productos.titulo}">
+            <img class="imagen" src="./media/${productos.imagen}" alt="${productos.titulo}"
             <p class="precio">$${productos.precio}</p>
             <span class="add" id=${productos.id}><a  href="#">Agregar <i class="fa-solid fa-cart-plus fa-xs"></i></a></span>
+            <span class="detalle" id=${productos.id}><a href="../pages/producto.html" target="_blank">Detalles <i class="fa-solid fa-magnifying-glass"></i></a></span>
         `; //le digo todo lo que quiero que contenga linkeando datos del array
 
         productContainer.append(li);
         
     })
     btnReload();
+    btndetail();
 };
 
 //uploadProducts(products)
@@ -90,3 +93,20 @@ function refreshCount(){
     let Number = productOnCart.reduce((count, product) => count + product.cantidad, 0);
 counter.innerText = Number;
 } 
+
+function btndetail(){
+    const detalle = document.querySelectorAll(".detalle")
+
+    detalle.forEach(boton =>{
+        boton.addEventListener("click", detalleProducto)
+    });
+}
+
+
+const detalleDelProducto = [];
+function detalleProducto(e){
+    const detalle = e.currentTarget.id;
+    const agregarProducto = products.find(producto => producto.id === detalle)
+
+    localStorage.setItem("products-detail", JSON.stringify(agregarProducto));
+}

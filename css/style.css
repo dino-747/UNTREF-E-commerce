@@ -1,9 +1,14 @@
 @import "./base.css" ;
 
-main{
-    display: grid;
-    grid-template-columns: 1fr 4fr;
-    background-color: cornsilk;
+.titulo-principal{
+    margin: 5px;
+    color: teal;
+    width:min-content;
+}
+.main-index{
+    display: flex;
+    justify-content: space-between;
+    
 }
 .filtersContainer{
     display: flex;
@@ -14,34 +19,22 @@ main{
     padding: 15px;
     font-size: 19px;
 }
-.filterOptions .hidden{
-    display: none;
+.filtersContainer .alphaLi{
+    margin-bottom: 8px;
+    margin-top: 8px;
+    font-size: 20px;
 }
 .filterOptions .option{
     background-color:transparent;
     color: grey;
     cursor: pointer;
     width: 100%;
+    font-size: 18px;
+    
 }
-.filterOptions.option.active{
-    background-color: cadetblue;
-    color: blueviolet;
-    position: relative;
+.filterOptions .option:hover{
+    color: teal;
 }
-
-
-.filterOptions.option.active::before{
-    color:darkseagreen;
-    background-color:transparent ;
-    position: absolute;
-}
-.filterOptions .option .active::after{
-    color:darkseagreen;
-    background-color:transparent ;
-    position: absolute;
-}
-
-
 #product-container{
     display: flex;
     justify-content: flex-start;
@@ -80,12 +73,107 @@ main{
 }
 .add a:hover{
     opacity: 0.6;
-    color: lemonchiffon;
+}
+.detalle{
+    border: none;
+    outline: 0;
+    padding: 10px;
+    background-color:steelblue;
+    text-align: center;
+    cursor: pointer;
+    width: 50%;
+    border-radius: 6px;
+    margin-top: 1px;
+}
+.detalle a{
+    color: snow;
+    font-size: 16px;
+}
+.detalle a:hover{
+    opacity: 0.6;
+}
+}
+.btn-reset{
+    margin-top: 10px;
+
+#Reset {
+    color: teal;
+    font-size: 18px;
+}
+#Reset:hover{
+    color: crimson;
 }
 }
 
+.cart-Btn{
+    color: snow;
+    position: fixed;
+    line-height: 55px;
+    width: 55px;
+    height: 55px;
+    bottom: 45px;
+    right: 45px;
+    background-color: teal;
+    font-size: 21px;
+    border-radius: 50px;
+    z-index: 100;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.3);
+    text-align: center;
+}
+.cart-Btn:hover{
+    color: teal;
+    background-color: snow;
+}
+footer{
+    background-color:slategray;
+    height: 75px;
+    margin-top: 10px;
+}
+.link-conteiner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.link-conteiner .links-foot{
+    font-size: 25px;
+    padding: 3px;
+}
+.firma{
+    position: absolute;
+    left: 0;
+    opacity: 0.5;
+}
+/*carrito*/
+.btn-carrito-inicio{
+    display: flex;
+    justify-content: center;
+
+    .btnInicio{
+        background-color: teal;
+        width: min-content;
+        padding: 12px;
+        margin: 10px;
+        font-size: 19px;
+        border-radius: 15px;
+        color: snow;
+    }
+    .btnInicio.active{
+        background-color: snow;
+        color: teal;
+    }
+}
 .cart-container{
     display: flex;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    width: 80vw;
+
+}
+.Carrito-vacio{
+    margin-top: 5%;
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .cart-Product{
     display: flex;
@@ -96,17 +184,24 @@ main{
     color: grey;
     padding: 7px;
     width: 80vw;
-}
+
 .cart-Product-img{
-    width: 100px;
+    width: 70px;
 }
 
 .cart-Product span{
     font-size: 15px;
 }
+.cart-Product-Delete{
+    color: black;
+}
+.cart-Product-Delete:hover{
+    color: crimson;
+}
+}
 .cart-action{
     display: flex;
-    justify-content: space-around;
+    
 }
 .cart-action-vaciar{
     border: 0;
@@ -116,15 +211,103 @@ main{
     color: gray;
     text-transform: uppercase;
     cursor: pointer;
+    margin: 50px;
+}
+.cart-action-vaciar:hover{
+    color: crimson;
+    opacity: 0.6;
 }
 .cart-action-total{
     display: flex;
     background-color: snow ;
     padding: 5px;
-    color: aliceblue;
-    gap: 5px;
+    align-items: center;
+    flex-direction: column;
+}
+
+.cart-action-buy{
+    border: 0;
+    background-color: snow  ;
+    padding: 5px;
+    border-radius: 1rem;
+    color: gray;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.cart-action-buy:hover{
+    color: darkgreen;
+    opacity: 0.5;
+}
+.Producto-comprado{
+    position: absolute;
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    bottom: 50%;
 }
 
 .disabled{
     display: none;
 }
+/*detalle*/
+.container-Producto-Detalle{
+    display: flex;
+    justify-content: center;
+    height: 80vh;
+    margin-top: 5%;
+
+    .card-Producto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .product-Detalle-Img{
+        width: 350px;
+    }
+    .agregar-Producto{
+        border: none;
+        outline: 0;
+        padding: 10px;
+        background-color: teal;
+        text-align: center;
+        cursor: pointer;
+        border-radius: 6px;
+        width: 40%;
+    }
+    .agregar-Producto a{
+        color: snow;
+        font-size: 16px;
+    }
+}
+.descripcion-Producto{
+    display: flex;
+    flex-direction: column;
+
+    .titulo{
+        font-size: 22px;
+        margin-bottom: 6px;
+        color: teal;
+    }
+    .detalles{
+        font-size: 17px;
+        padding: 10px;
+        color: grey;
+    }
+    .precio{
+        font-size: 19px;
+        margin-top: 10px;
+        color: rgba(0, 0, 0, 0.774);
+    }
+    }
+}
+
+/*mediasQ*/
+
+
+@media screen and (max-width: 600px){
+
+    .main-index{
+        display: flex;
+        
+    }
+}
+

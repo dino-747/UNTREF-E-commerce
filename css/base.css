@@ -9,3 +9,9 @@ ul, li {
 a{
     text-decoration: none;
 }
+body{
+    background-color:whitesmoke;
+    position: relative;
+    padding-bottom: 80px;
+    min-height: 100vh;
+}

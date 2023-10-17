@@ -128,6 +128,9 @@ footer{
     background-color:slategray;
     height: 75px;
     margin-top: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 .link-conteiner{
     display: flex;
@@ -239,7 +242,7 @@ footer{
     position: absolute;
     font-size: 20px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    bottom: 50%;
+    margin-top: 10%;
 }
 
 .disabled{
@@ -250,6 +253,7 @@ footer{
     display: flex;
     justify-content: center;
     margin-top: 5%;
+    background-color: snow;
 
     .card-Producto{
     display: flex;
@@ -345,5 +349,8 @@ footer{
         display: flex;
         align-items: center;
         flex-wrap: wrap;
+    }
+    .filtersContainer{
+        width: auto;
     }
 }

@@ -2,7 +2,6 @@
 const detalleDelProducto = JSON.parse(localStorage.getItem("products-detail"))
 
 const cargarProductosDetalle = document.querySelector(".container-Producto-Detalle")
-let btnAgregar = document.querySelector(".agregar-Producto")
 
 function cargarProducto(){
     if(detalleDelProducto){

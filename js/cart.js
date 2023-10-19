@@ -61,7 +61,6 @@ if (productOnCart && productOnCart.length > 0){
     cartActions.classList.add("disabled");
     comprado.classList.add("disabled");
 }
-    
 }
 cargarProductosCarrito()
 
@@ -105,5 +104,4 @@ function comprarTodo(){
     productsContainer.classList.add("disabled");
     cartActions.classList.add("disabled");
     comprado.classList.remove("disabled");
-
 }

@@ -1,6 +1,6 @@
 @import "./base.css" ;
 
-.titulo-principal{
+.titulo-principal a{
     margin: 5px;
     color: teal;
     width:min-content;
